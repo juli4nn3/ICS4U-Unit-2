@@ -71,7 +71,7 @@ public final class JuliStack {
         return sizeOfString;
     }
 
-        public String peekItem() {
+    public String peekItem() {
         // this method returns the last value in the stackAsList
 
         String itemPeeked = "";
