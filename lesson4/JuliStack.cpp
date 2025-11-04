@@ -1,20 +1,25 @@
 #include <iostream>
 #include <vector>
-#include "JuliStack.h"
 using namespace std;
 
-void JuliStack::pushItem(string pushedString) {
-    stackAsList.push_back(pushedString);
-};
+// Create a JuliStack class with some attributes
+class JuliStack {
+  public:
+    vector<string> stackAsList;
 
-string JuliStack::showStack() {
-    // this method returns the stack as a string
-    string stackValues = "";
-
-    // creates string of stackAsList without the square brackets
-    for (string items : stackAsList) {
-        stackValues = stackValues + items + ", ";
+    void pushItem(string pushedString) {
+        stackAsList.push_back(pushedString);
     }
 
-    return stackValues;
+    string showStack() {
+        // this method returns the stack as a string
+        string stackValues = "";
+
+        // creates string of stackAsList without the square brackets
+        for (string items : stackAsList) {
+            stackValues = stackValues + items + ", ";
+        }
+
+        return stackValues;
+    }
 };

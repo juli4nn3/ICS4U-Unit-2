@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include "JuliStack.h"
+#include "JuliStack.cpp"
 using namespace std;
 
 int main() {
